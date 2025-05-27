@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>okreport</title>
+    <link rel="stylesheet" href="{% static 'worker/main.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar"> ">
+  <a class="navbar-brand" href="#">oKReport</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'login' %}">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Register</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+    </header>
+    <main>
+      <div class="container my-5">
+  <div class="row">
+    
+    <!-- Left: About Section -->
+    <div class="col-md-6">
+      <h2>About OkReport</h2>
+      <p>
+        OkReport is a smart and user-friendly web application designed to simplify daily worker management for local builders, contractors, and site supervisors. With OkReport, registered users can easily add and categorize their workforce into helpers and proficient workers, assign daily wages, and manage attendance with just a few clicks. <strong>system automatically tracks daily attendance and calculates monthly salaries based on actual working days</strong>, eliminating the hassle of manual record-keeping or spreadsheets. Whether you're managing a small team or multiple laborers across different sites, OkReport provides a centralized, efficient solution to keep your workforce organized and your reporting accurate. <strong>Built using Django</strong>, the platform is secure, fast, and tailored for practical, real-world construction site needs.
+      </p>
+    </div>
+
+    <!-- Right: Feature Images with Titles -->
+     
+     <div class="col-md-6">
+      <h2>Features</h2>
+      
+      <!-- <div class="d-flex flex-wrap gap-3"> -->
+         <div class="row">
+            <div class="col-6">
+            <img src="{% static 'worker/images/login img.jpg' %}" class="img-fluid rounded shadow" style="width: 100%;">
+            <h6>Login</h6>
+            </div>
+     
+     
+        <div class="col-6">
+        <img src="{% static 'worker/images/add-worker.jpg' %}" class="img-fluid rounded shadow" style="width: 100%;">
+        <h6>Add/Delete Worker</h6>
+  
+        </div>
+        <div class="col-6">
+        <img src="{% static 'worker/images/attendance.jpg' %}" class="img-fluid rounded shadow" style="width: 100%;">
+        <h6>Mark Attendance</h6>
+        </div>
+        <div class="col-6">
+        <img src="{% static 'worker/images/salary.jpg' %}" class="img-fluid rounded shadow" style="width: 100%;">
+        <h6>calculating Salary</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  </div>
+<!-- </div> -->
+
+    </main>
+    <footer class="bg-light text-center text-lg-start fixed-bottom">
+        <div class="text-center p-3">
+            © 2025 OkReport:
+            <a class="text-dark" href="#">okreport.com</a>
+          </div>
+        
+</body>
+</html>
