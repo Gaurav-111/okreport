@@ -11,12 +11,13 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 """
 import os
-
 from pathlib import Path
+
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 STATIC_URL = '/static/'
-ALLOWED_HOSTS = ['*']  # for testing; change this to domain in production
-ALLOWED_HOSTS = ['okreport-1.onrender.com']
+
+ALLOWED_HOSTS = ['okreport-1.onrender.com']  # ✅ Only this is needed
 
 
 # Add at the bottom
