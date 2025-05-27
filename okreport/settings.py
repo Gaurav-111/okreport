@@ -17,7 +17,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 STATIC_URL = '/static/'
 
-ALLOWED_HOSTS = ['okreport-1.onrender.com']  # ✅ Only this is needed
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'okreport-1.onrender.com']  # ✅ Only this is needed
 
 
 # Add at the bottom
