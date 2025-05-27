@@ -14,6 +14,7 @@ import os
 
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
+STATIC_URL = '/static/'
 ALLOWED_HOSTS = ['*']  # for testing; change this to domain in production
 
 # Add at the bottom
