@@ -13,23 +13,19 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 import os
 from pathlib import Path
 
+# Base directory
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Static files
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+# Hosts allowed to serve the app
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'okreport-1.onrender.com']  # ✅ Only this is needed
-
-
-# Add at the bottom
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+    'okreport-1.onrender.com'
+]
 
 
 # Quick-start development settings - unsuitable for production
